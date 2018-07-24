@@ -71,7 +71,10 @@ class RandomWordsState extends State<RandomWords> {
       title: Text(
         pair.asPascalCase,
         style: _biggerFont,
-      ),
+      ),trailing: Icon(
+      alreadySaved ? Icons.favorite : Icons.favorite_border,
+      color: alreadySaved ? Colors.red : null,
+    ),
     );
   }
 }
